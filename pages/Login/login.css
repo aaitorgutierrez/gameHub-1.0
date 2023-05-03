@@ -1,0 +1,54 @@
+.loginContainer{
+    width: 100%;
+    height: 100vh; 
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url(https://res.cloudinary.com/djglk3cso/image/upload/v1682957127/Game%20Hub/cool-geometric-triangular-figure-neon-laser-light-great-backgrounds-wallpapers_h7ecqq.jpg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.formBox{
+  width: 90%;
+  max-width: 350px;
+  max-height: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: #fff;
+  padding: 40px 50px 60px;
+  text-align:center;
+  border-radius: 5%;
+}
+
+#loginButton{ 
+  margin-top: 5%;
+  padding: 1% 3% 1%;
+  cursor: pointer;
+}
+h1{
+  margin-bottom: 5%;
+}
+#loginButton:hover{
+  background-color: lightblue;
+}
+
+/* width: 90%;
+  max-width: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  padding: 40px 10px 40px;
+  text-align:center;
+  flex-wrap: wrap; */
+
+/* position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  background: #fff;
+  padding: 50px 60px 70px;
+  text-align:center */

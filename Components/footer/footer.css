@@ -1,0 +1,12 @@
+.footerDiv {
+    background-color: var(--header_footer_color);
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+p {
+    color: var(--primaryColor)
+}
