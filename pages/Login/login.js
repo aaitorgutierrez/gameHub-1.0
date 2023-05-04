@@ -1,3 +1,4 @@
+import { initControler } from "../../utils/route";
 import "./login.css"
 
 const template = () => {
@@ -17,7 +18,7 @@ const template = () => {
             </div>
           </div>
         </form>
-      <button id="loginButton">Sumbit</button>
+      <button id="loginButton">Submit</button>
     </div>
   </div>
 `
@@ -26,16 +27,18 @@ const addListeners = () => {
   const buttonLogin = document.getElementById("loginButton");
   buttonLogin.addEventListener("click", () => {
     const inputLogin = document.querySelector("input");
-    localStorage.setItem("name", inputLogin.value);
-    if (localStorage.getItem("name"))
-      document.querySelector("nav").style.display = "block";
-    initControler();
+    localStorage.setItem("user", inputLogin.value);
+    if (localStorage.getItem("user"))
+    document.querySelector("nav").style.display = "flex";
+    initControler("Home");
   });
 };
 
 
 export const printTemplate = () => {
-  if (!localStorage.getItem("user"))
-    document.querySelector("#app").innerHTML = template()
+    console.log("entro")
+    if (!localStorage.getItem("user"))
+    document.querySelector("nav").style.display = "none"
+    document.querySelector("main").innerHTML = template()
     addListeners()
 }

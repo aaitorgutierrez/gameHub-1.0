@@ -11,3 +11,17 @@
   --primaryColor: var(#FFFFFF);
   --buttonColor: var(#E2062D)
 }
+
+main {
+  min-height: 80vh;
+  background-color: #1b2838;
+}
+footer{
+  height: 10vh;
+  width: auto;
+  background-color: black;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}

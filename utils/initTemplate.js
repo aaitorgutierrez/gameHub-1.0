@@ -1,4 +1,5 @@
-import { printTemplate as printFooter} from "../Pages/footer/footer";
+import { printTemplate as printFooter} from "../Components/footer/footer";
+import { printTemplate as printHeader} from "../Components/header/header";
 
 
 export const initTemplate = () => {
@@ -9,6 +10,7 @@ export const initTemplate = () => {
   
     app.append(header, main, footer);
     printFooter();
+    printHeader()
   };
 
   

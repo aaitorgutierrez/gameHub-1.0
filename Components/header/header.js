@@ -1,1 +1,55 @@
 import "./header.css"
+
+const template = () =>{
+   return `
+   <nav class="headerNav">
+        <div class="logo">
+            <h4><i class="fa-solid fa-dragon" style="color: #ffffff;"></i>DragonHub</h4>
+        </div>
+        <ul class="navLinks">
+            <li><button>Home</button></li>
+            <li><button>Games</button></li>
+            <li><button>About us</button></li>
+            <li><button>Change user</button></li>
+        </ul>
+    </nav>
+    <div class="hamburger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+    </div>
+   `
+}
+
+const navSlide = () => {
+    const burger = document.querySelector(".hamburger")
+    const nav = document.querySelector(".navLinks")
+    const navLinks = document.querySelectorAll(".navLinks li")
+    // esto es para el toggle de la hamburgesa
+burger.addEventListener("click", ()=>{
+    nav.classList.toggle("nav-active")
+        // esto es para la animación de los links
+    navLinks.forEach((link, index) =>{
+        // esto lo que hace es que podamos alterar la animación a traves de un template string
+        if (link.style.animation){
+        // esto es para cada vez que se abre el menu se ejecute la animacion
+           link.style.animation = ``
+        }else {
+            link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.5}s`
+        }
+        // esta línea de código aplica la animación navLinkFade a un elemento de enlace con una duración de 0,5 segundos, 
+        // una función de temporización fácil,
+        //  un modo de relleno de reenvíos y un retraso calculado en función del valor del índice.
+    })
+    })    
+}
+
+
+
+
+
+export const printTemplate = () => {
+    document.querySelector("Header").innerHTML = template();
+    navSlide();
+  };
+  
