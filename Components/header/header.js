@@ -1,3 +1,4 @@
+import { initControler } from "../../utils/route"
 import "./header.css"
 
 const template = () =>{
@@ -7,10 +8,10 @@ const template = () =>{
             <h4><i class="fa-solid fa-dragon" style="color: #ffffff;"></i>DragonHub</h4>
         </div>
         <ul class="navLinks">
-            <li><button>Home</button></li>
+            <li><button id="buttonHome">Home</button></li>
             <li><button>Games</button></li>
             <li><button>About us</button></li>
-            <li><button>Change user</button></li>
+            <li><button id="buttonChangeUser">Change user</button></li>
         </ul>
     </nav>
     <div class="hamburger">
@@ -44,12 +45,26 @@ burger.addEventListener("click", ()=>{
     })    
 }
 
+const addListeners = () => {
 
-
+const buttonDashboard = document.getElementById("buttonHome");
+  buttonDashboard.addEventListener("click", () => {
+    initControler("Home");
+ })
+ const buttonChangeUser = document.getElementById("buttonChangeUser")
+ buttonChangeUser.addEventListener("click", (e) => {
+    localStorage.removeItem("user");
+    initControler("Login")
+    if (!localStorage.getItem("user"))
+    document.querySelector("nav").style.display = "none"
+ })
+}
 
 
 export const printTemplate = () => {
-    document.querySelector("Header").innerHTML = template();
-    navSlide();
+    document.querySelector("Header").innerHTML = 
+    template();
+    navSlide(); 
+    addListeners();
   };
   

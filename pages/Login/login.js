@@ -5,7 +5,7 @@ const template = () => {
     return `
     <div class="loginContainer">
     <div class ="formBox">
-        <h1>Sign up</h1>
+        <h1 class="colorSign">Sign up</h1>
         <form>
           <div class="input-group">
             <div class="input-field">

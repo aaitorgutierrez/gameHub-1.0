@@ -10,6 +10,9 @@ export const initControler = (route) => {
         case "Home":
         Home()
         break
+        case "Login":
+        Login();
+        break;
     }
 }
 

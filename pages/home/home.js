@@ -15,8 +15,26 @@ const template = () =>{
           <h2>Pokedex</h2>
         </figure>
       </li>
+    </ul>
     `
 }
+
+const addListeners = () => {
+  const imgPokemon = document.getElementById("figurePokemon");
+  imgPokemon.addEventListener("click", () => {
+    initControler("Pokemon");
+  });
+  const imgManga = document.getElementById("imgManga");
+  imgManga.addEventListener("click", () => {
+    initControler("Manga");
+  });
+  const imgAnime = document.getElementById("imgAnime");
+  imgAnime.addEventListener("click", () => {
+    initControler("Anime");
+  });
+};
+
+
 
 export const printTemplate = () => {
     document.querySelector("main").innerHTML = template()
