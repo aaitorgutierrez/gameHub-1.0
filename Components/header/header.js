@@ -5,11 +5,11 @@ const template = () =>{
    return `
    <nav class="headerNav">
         <div class="logo">
-            <h4><i class="fa-solid fa-dragon" style="color: #ffffff;"></i>DragonHub</h4>
+            <h3><i class="fa-solid fa-dragon fa-xl" style="color: #ffffff;"></i>DragonHub</h3>
         </div>
         <ul class="navLinks">
             <li><button id="buttonHome">Home</button></li>
-            <li><button>Games</button></li>
+            <li><button>Merch</button></li>
             <li><button>About us</button></li>
             <li><button id="buttonChangeUser">Change user</button></li>
         </ul>

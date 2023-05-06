@@ -1,6 +1,7 @@
-import { printTemplate as Login, printTemplate} from "../pages/Login/login";
+import { printTemplate as Login} from "../pages/Login/login";
 import { printTemplate as Home} from "../pages/home/home";
-printTemplate
+import { printTemplate as Pokedex} from "../pages/pokedex/pokedex";
+
 
 export const initControler = (route) => {
     switch (route) {
@@ -13,6 +14,10 @@ export const initControler = (route) => {
         case "Login":
         Login();
         break;
+        case "Pokedex":
+        Pokedex();
+        break;
+
     }
 }
 
