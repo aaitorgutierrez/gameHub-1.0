@@ -34,7 +34,6 @@ const addListeners = () => {
   });
 };
 
-
 export const printTemplate = () => {
     console.log("entro")
     if (!localStorage.getItem("user"))

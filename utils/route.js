@@ -20,8 +20,7 @@ export const initControler = (route) => {
         break;
         case "Quiz":
         Quiz();
-        break;    
-
+        break;
     }
 }
 
