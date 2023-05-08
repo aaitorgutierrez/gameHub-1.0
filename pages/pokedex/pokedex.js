@@ -1,11 +1,6 @@
 import "./Pokedex.css";
 import { dataPokemon } from "../../utils/dataPokemon"
 
-//! ----------------------------------------------------------------
-//? ------------------ TEMPLATE GENERAL ---------------------------
-//! ----------------------------------------------------------------
-
-// TODO Creamos una variable local para que tengan acceso todas las funciones con los datos del service
 let dataServicePokemon;
 let typeGlobal;
 const template = () =>
@@ -18,7 +13,7 @@ const template = () =>
   </div>`;
 
 
-//TODO en el data service llamamos al servicio y creamos las figure que luego se pintaran
+
 const dataService = async () => {
     const getData = await dataPokemon()
     const {pokemon, type} = getData
@@ -48,13 +43,13 @@ const addListeners = () => {
   inputPokemon.addEventListener("input", (e) => {
     filterPokemon(e.target.value, "name");
   });
-//   typeGlobal.forEach((type) => {
-//     const buttonType = document.querySelector(`.${type}`);
-//     buttonType.addEventListener("click", (e) => {
-//       console.log(type);
-//       filterPokemon(type, "type");
-//     });
-//   });
+   typeGlobal.forEach((type) => {
+     const buttonType = document.querySelector(`.${type}`);
+     buttonType.addEventListener("click", (e) => {
+       console.log(type);
+       filterPokemon(type, "type");
+     });
+   });
 };
 
 const filterPokemon = (filtro, donde) => {
@@ -92,7 +87,7 @@ const printButtons = (types) => {
 
 export const printTemplate = () => {
   document.querySelector("main").innerHTML = template();
-  dataService();
-//   printButtons();
+  dataService();   
+  printButtons();
   addListeners();
 };

@@ -8,10 +8,10 @@ const template = () =>{
             <h3><i class="fa-solid fa-dragon fa-xl" style="color: #ffffff;"></i>DragonHub</h3>
         </div>
         <ul class="navLinks">
-            <li><button id="buttonHome">Home</button></li>
-            <li><button>Merch</button></li>
-            <li><button>About us</button></li>
-            <li><button id="buttonChangeUser">Change user</button></li>
+            <li><button class="headerButton" id="buttonHome">Home</button></li>
+            <li><button class="headerButton">Merch</button></li>
+            <li><button class="headerButton">About us</button></li>
+            <li><button class="headerButton" id="buttonChangeUser">Change user</button></li>
         </ul>
     </nav>
     <div class="hamburger">

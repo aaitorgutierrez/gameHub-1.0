@@ -38,7 +38,7 @@ h1,h2,h3,h4,h5 {
     margin: 5px;
     cursor: pointer;
 }
-button {
+.headerButton {
     background-color: transparent;
     color: var(--primary-color);
     font-weight: 700;
@@ -51,7 +51,7 @@ button {
     border-radius: 10%;
     
 }
-button:hover{
+.headerButton:hover{
     color: red;
     border-color: red;
 

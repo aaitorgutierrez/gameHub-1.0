@@ -46,9 +46,17 @@ const addListeners = () => {
   imgPokemon.addEventListener("click", () => {
     initControler("Pokedex");
   });
+  const imgQuiz = document.getElementById("figureQuiz");
+  imgQuiz.addEventListener("click", () => {
+    initControler("Quiz");
+    });
+  ;
+  
 };
 
 
 export const printTemplate = () => {
-    document.querySelector("main").innerHTML = template();addListeners()
+    document.querySelector("main").innerHTML = 
+    template();
+    addListeners();
 }
