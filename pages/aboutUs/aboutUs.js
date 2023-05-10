@@ -9,7 +9,7 @@ const template = () => {
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde saepe
           iusto molestiae expedita?
         </p>
-        <form>
+        <form action="https://formsubmit.co/e2108cb67e6f8a361ae1f069e34cd91a" method="POST">
           <input type="" placeholder="Your Name" required />
           <input
             type="email"
@@ -65,5 +65,4 @@ const template = () => {
 // };
 export const printTemplate = () => {
   document.querySelector("main").innerHTML = template();
-  addListener();
 };

@@ -10,7 +10,9 @@
 }
 
 .imgPokemon {
-  height: 200px;
+  width: auto;
+  height: 100px;
   object-fit: cover;
   transition: all 1s ease-in-out;
+  object-fit: cover;
 }

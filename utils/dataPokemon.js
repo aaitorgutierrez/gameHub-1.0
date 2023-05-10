@@ -7,9 +7,11 @@ let dataGlobal;
 
 export const dataPokemon = async () => {
   const data = [];
+
   for (let i = 1; i < 151; i++) {
     data.push(await getPokemon(i));
   }
+
   return dataMap(data);
 };
 

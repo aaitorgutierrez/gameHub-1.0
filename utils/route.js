@@ -4,6 +4,7 @@ import { printTemplate as Pokemon } from "../pages/Pokemon/Pokemon";
 import { printTemplate as Quiz } from "../pages/quiz/quiz";
 import { printTemplate as Hangman } from "../pages/hangman/hangman";
 import { printTemplate as about } from "../pages/aboutUs/aboutUs";
+import { printTemplate as Memory } from "../pages/Memory/Memory";
 
 export const initControler = (route) => {
   switch (route) {
@@ -27,6 +28,9 @@ export const initControler = (route) => {
       break;
     case "about":
       about();
+      break;
+    case "Memory":
+      Memory();
       break;
   }
 };

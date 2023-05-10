@@ -8,10 +8,10 @@ let dataServicePokemon;
 let typeGlobal;
 const template = () =>
   ` <div id="pokemon">
-    <div class="spinner"></div>
     <div id="containerFilter">
       <div id="filterButton"></div>
       <input type="text" id="inputPokemon" placeholder="Busca tu pokemon favorito"/>
+      <div class="spinner"></div>
     </div>
     <div class="galleryPokemon"></div>
   </div>`;
@@ -25,19 +25,14 @@ const template = () =>
 //   spinnerContainer.innerHTML = "";
 // };
 const dataService = async () => {
+  document.querySelector(".spinner").innerHTML = Loading();
   const getData = await dataPokemon();
   const { type, pokemonData } = getData;
   dataServicePokemon = pokemonData;
   typeGlobal = type;
-  const displaySpinner = document.querySelector(".spinner");
-  displaySpinner.innerHTML = "";
-  displaySpinner.innerHTML = Loading();
-  setTimeout(() => {
-    displaySpinner.style.display = "none";
-    console.log(displaySpinner);
-    createAndPrintFigure(dataServicePokemon);
-    printButtons(type);
-  }, 2000);
+  document.querySelector(".spinner").innerHTML = "";
+  createAndPrintFigure(dataServicePokemon);
+  printButtons(type);
 };
 
 //TODO --> Añadimos los escuchadores de eventos

@@ -37,6 +37,18 @@ const template = () => {
             <h2>The Hangman</h2>
         </figure>
       </li>
+
+      <li>
+        <figure id="figureMemory" class="figureDashboard">
+          <img
+            src="https://res.cloudinary.com/djglk3cso/image/upload/v1683206031/Dise%C3%B1o_sin_t%C3%ADtulo_sxdp90.png"
+            alt="navigate to page memory"
+            id="imgMemory"
+          />
+          <h2>Memory Game</h2>
+        </figure>
+      </li>
+
     </ul>
     `;
 };
@@ -53,6 +65,10 @@ const addListeners = () => {
   const imgHangman = document.getElementById("figureHangman");
   imgHangman.addEventListener("click", () => {
     initControler("Hangman");
+  });
+  const imgMemory = document.getElementById("figureMemory");
+  imgMemory.addEventListener("click", () => {
+    initControler("Memory");
   });
 };
 
