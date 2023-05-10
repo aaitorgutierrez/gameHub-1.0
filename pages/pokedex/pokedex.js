@@ -1,5 +1,5 @@
 import "./Pokedex.css";
-import { dataPokemon } from "../../utils/dataPokemon"
+import { dataPokemon } from "../../utils/dataPokemon";
 
 let dataServicePokemon;
 let typeGlobal;
@@ -12,15 +12,12 @@ const template = () =>
     <div class="galleryPokemon"></div>
   </div>`;
 
-
-
 const dataService = async () => {
-    const getData = await dataPokemon()
-    const {pokemon, type} = getData
+  const getData = await dataPokemon();
+  const { pokemon, type } = getData;
   dataServicePokemon = pokemon;
   typeGlobal = type;
- createAndPrintFigure(dataServicePokemon);
-
+  createAndPrintFigure(dataServicePokemon);
 };
 
 const createAndPrintFigure = (data) => {
@@ -38,22 +35,20 @@ const createAndPrintFigure = (data) => {
 };
 
 const addListeners = () => {
-
   const inputPokemon = document.getElementById("inputPokemon");
   inputPokemon.addEventListener("input", (e) => {
     filterPokemon(e.target.value, "name");
   });
-   typeGlobal.forEach((type) => {
-     const buttonType = document.querySelector(`.${type}`);
-     buttonType.addEventListener("click", (e) => {
-       console.log(type);
-       filterPokemon(type, "type");
-     });
-   });
+  typeGlobal.forEach((type) => {
+    const buttonType = document.querySelector(`.${type}`);
+    buttonType.addEventListener("click", (e) => {
+      console.log(type);
+      filterPokemon(type, "type");
+    });
+  });
 };
 
 const filterPokemon = (filtro, donde) => {
-
   switch (donde) {
     case "name":
       {
@@ -87,7 +82,7 @@ const printButtons = (types) => {
 
 export const printTemplate = () => {
   document.querySelector("main").innerHTML = template();
-  dataService();   
+  dataService();
   printButtons();
   addListeners();
 };

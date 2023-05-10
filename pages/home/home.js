@@ -1,8 +1,8 @@
-import { initControler } from "../../utils/route"
-import "./home.css"
+import { initControler } from "../../utils/route";
+import "./home.css";
 
-const template = () =>{
-    return `
+const template = () => {
+  return `
     <div id="containerDashboard">
     <ul>
       <li>
@@ -38,8 +38,8 @@ const template = () =>{
         </figure>
       </li>
     </ul>
-    `
-}
+    `;
+};
 
 const addListeners = () => {
   const imgPokemon = document.getElementById("figurePokemon");
@@ -49,14 +49,14 @@ const addListeners = () => {
   const imgQuiz = document.getElementById("figureQuiz");
   imgQuiz.addEventListener("click", () => {
     initControler("Quiz");
-    });
-  ;
-  
+  });
+  const imgHangman = document.getElementById("figureHangman");
+  imgHangman.addEventListener("click", () => {
+    initControler("Hangman");
+  });
 };
 
-
 export const printTemplate = () => {
-    document.querySelector("main").innerHTML = 
-    template();
-    addListeners();
-}
+  document.querySelector("main").innerHTML = template();
+  addListeners();
+};

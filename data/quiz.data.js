@@ -1,5 +1,5 @@
-export const dataQuiz = () => {
-    const questions = [
+
+export const questions = [
         {
             questions: "¿En qué año fueron los ultimos Juegos Olímpicos",
             answers: [
@@ -40,4 +40,3 @@ export const dataQuiz = () => {
             ]
         }
     ]
-}

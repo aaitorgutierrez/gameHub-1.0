@@ -1,0 +1,30 @@
+.hangmanDiv {
+  text-align: center;
+}
+#hangman {
+  display: block;
+  margin: 20px auto;
+}
+
+#word {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+#inputHangman {
+  font-size: 16px;
+  width: 30px;
+  text-transform: uppercase;
+}
+
+#resetButton {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.contactImg img {
+  max-width: 100%;
+  width: 720px;
+  height: 700px;
+  border-radius: 10px;
+}

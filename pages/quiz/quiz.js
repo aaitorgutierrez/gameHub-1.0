@@ -1,9 +1,8 @@
-
-import "./quiz.css"
-import { quizControler } from "../../utils/quizControler"
+import "./quiz.css";
+import { quizControler } from "../../utils/quizControler";
 
 const template = () => {
-    return `
+  return `
 <div class="mainQuizDiv">
   <div class="quizDiv">
     <h1>Quiz cultura general</h1>
@@ -19,12 +18,10 @@ const template = () => {
     </div>
   </div>
 </div>
-    `
-}
+    `;
+};
 
-
-export const printTemplate =() =>{
-    document.querySelector("main").innerHTML = 
-    template(); 
-    quizControler(); 
-}
+export const printTemplate = () => {
+  document.querySelector("main").innerHTML = template();
+  quizControler();
+};
