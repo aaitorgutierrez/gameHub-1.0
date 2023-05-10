@@ -1,5 +1,6 @@
 import "./quiz.css";
 import { quizControler } from "../../utils/quizControler";
+import { addListenersTheme } from "../../utils/lightTheme";
 
 const template = () => {
   return `
@@ -20,6 +21,13 @@ const template = () => {
 </div>
     `;
 };
+
+// const backgroundTheme = () => {
+//   const backgrondTheme = document.getElementById("quizDiv");
+//   if (addListenersTheme() === true) {
+//     backgrondTheme.style.backgroundColor = black;
+//   }
+// };
 
 export const printTemplate = () => {
   document.querySelector("main").innerHTML = template();

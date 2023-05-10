@@ -1,3 +1,4 @@
+import { addListenersTheme } from "../../utils/lightTheme";
 import { initControler } from "../../utils/route";
 import "./header.css";
 
@@ -13,7 +14,9 @@ const template = () => {
             <li><button class="headerButton" id="buttonAboutUs">About us</button></li>
             <li><button class="headerButton" id="buttonChangeUser">Change user</button></li>
         </ul>
+        <img src="https://res.cloudinary.com/djglk3cso/image/upload/v1683708171/sun_g8mrfj.png" id="icon">
     </nav>
+    
     <div class="hamburger">
         <div class="line1"></div>
         <div class="line2"></div>
@@ -69,4 +72,5 @@ export const printTemplate = () => {
   document.querySelector("Header").innerHTML = template();
   navSlide();
   addListeners();
+  addListenersTheme();
 };

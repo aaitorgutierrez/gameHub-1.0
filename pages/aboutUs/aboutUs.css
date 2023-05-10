@@ -1,5 +1,5 @@
 .colorAboutH1 {
-  color: white;
+  color: var(--primaryColor);
   font-size: 70px;
   margin-bottom: 30px;
 }
@@ -9,7 +9,7 @@ span {
   margin-bottom: 30px;
 }
 .colorAboutP {
-  color: white;
+  color: var(--primaryColor);
   letter-spacing: 1px;
   line-height: 26px;
   font-size: 1.1rem;
@@ -18,7 +18,7 @@ span {
 
 .contact {
   padding: 40px 15%;
-  background: #1b2838;
+  background: var(--backGroundColor);
   width: 100%;
   min-height: 100%;
   display: grid;
@@ -46,7 +46,7 @@ form textarea {
   border: none;
   outline: none;
   background: #191919;
-  color: #fff;
+  color: var(--primaryColor);
   font-size: 1.1rem;
   margin-bottom: 0.7rem;
   border-radius: 10px;

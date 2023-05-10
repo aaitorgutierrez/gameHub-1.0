@@ -1,74 +1,75 @@
-#question{
-    color: black;
+#question {
+  color: black;
 }
-.mainQuizDiv{
-    background:#1b2838;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.mainQuizDiv {
+  background: var(--backGroundColor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.quizDiv{
-    background: #fff;
-    width: 80%;
-    max-width: 37.5rem;
-    margin: 100px 0px 0px ;
-    border-radius: 10px;
-    padding: 30px;
-    }
-    
-    .quizDiv h1 {
-        font-size: 25px;
-        font-weight: 600;
-        color: black;
-        border-bottom: 1px solid #333;
-        padding-bottom: 30px;
-    }
-    
-    .quiz{
-        padding: 20px 0px ;
-    }
-    
-    .quiz h2 {
-        font-size: 18px;
-    }
-    
-    .buttonQuiz{
-       background: #fff; 
-       color: #222;
-       font-weight: 500;
-       width: 100%;
-       border: 1px solid #222;
-       padding: 10px;
-       margin: 10px 0;
-       text-align: left;
-       border-radius: 4px;
-       cursor:pointer;
-       transition: 0.2s;
-    }
-    
-    .buttonQuiz:hover:not([disabled]){
-        background: #1b2838;
-        color: #fff;
-    }
-    .buttonQuiz:disabled{
-        cursor: no-drop;
-    }
-    #next-button{
-        background: #001e4d;
-        color: #fff;
-        font-weight: 500;
-        width:  100px;
-        height: 40px;
-        border: 10px;
-        margin: 20px auto 0;
-        border-radius: 4px;
-        cursor: pointer;
-        display: none;
-    }
-    
-    .correct {
-        background: green;
-    }
-    .incorrect{
-        background: red;
-    }
+
+.quizDiv {
+  background: #fff;
+  width: 80%;
+  max-width: 37.5rem;
+  margin: 100px 0px 0px;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.quizDiv h1 {
+  font-size: 25px;
+  font-weight: 600;
+  color: black;
+  border-bottom: 1px solid #333;
+  padding-bottom: 30px;
+}
+
+.quiz {
+  padding: 20px 0px;
+}
+
+.quiz h2 {
+  font-size: 18px;
+}
+
+.buttonQuiz {
+  background: #fff;
+  color: #222;
+  font-weight: 500;
+  width: 100%;
+  border: 1px solid #222;
+  padding: 10px;
+  margin: 10px 0;
+  text-align: left;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.buttonQuiz:hover:not([disabled]) {
+  background: var(--backGroundColor);
+  color: #fff;
+}
+.buttonQuiz:disabled {
+  cursor: no-drop;
+}
+#next-button {
+  background: #001e4d;
+  color: #fff;
+  font-weight: 500;
+  width: 100px;
+  height: 40px;
+  border: 10px;
+  margin: 20px auto 0;
+  border-radius: 4px;
+  cursor: pointer;
+  display: none;
+}
+
+.correct {
+  background: green;
+}
+.incorrect {
+  background: red;
+}

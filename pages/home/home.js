@@ -12,7 +12,7 @@ const template = () => {
             alt="navigate to page pokemon"
             id="imgPokemon"
           />
-          <h2>Pokedex</h2>
+          <h2>Pokemon</h2>
         </figure>
       </li>
 
@@ -44,7 +44,7 @@ const template = () => {
 const addListeners = () => {
   const imgPokemon = document.getElementById("figurePokemon");
   imgPokemon.addEventListener("click", () => {
-    initControler("Pokedex");
+    initControler("Pokemon");
   });
   const imgQuiz = document.getElementById("figureQuiz");
   imgQuiz.addEventListener("click", () => {

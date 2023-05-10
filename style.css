@@ -1,25 +1,18 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   box-sizing: border-box;
-}
-
-:root {
-  --headeFooterColor: var(#000000);
-  --backGroundColor: var(#2A2829);
-  --primaryColor: var(#FFFFFF);
-  --buttonColor: var(#E2062D)
 }
 
 main {
   min-height: 80vh;
-  background-color: #1b2838;
+  background-color: var(--backGroundColor);
 }
-footer{
+footer {
   height: 10vh;
   width: auto;
-  background-color: black;
+  background-color: var(--headeFooterColor);
   display: flex;
   justify-content: space-evenly;
   align-items: center;

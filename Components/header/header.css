@@ -1,16 +1,28 @@
 header {
   height: 10vh;
-  background-color: black;
+  background-color: var(--headeFooterColor);
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
+.light-theme {
+  --backGroundColor: white;
+  --primaryColor: black;
+}
+
+:root {
+  --headeFooterColor: #000000;
+  --backGroundColor: #1b2838;
+  --primaryColor: #ffffff;
+  --buttonColor: #e2062d;
+}
+
 h1,
 h2,
 h3,
 h4,
 h5 {
-  color: white;
+  color: var(--primaryColor);
 }
 .headerNav {
   height: 10vh;
@@ -29,7 +41,14 @@ h5 {
 .navLinks {
   display: flex;
   justify-content: space-around;
+  text-align: right;
+  margin-left: 30%;
   width: 40%;
+}
+
+#icon {
+  width: 30px;
+  cursor: pointer;
 }
 
 .hamburger {
@@ -59,10 +78,28 @@ h5 {
   color: red;
   border-color: red;
 }
+@media screen and (max-width: 1236px) {
+  .navLinks {
+    margin-left: 10%;
+    width: 65%;
+  }
+}
 
 @media screen and (max-width: 1102px) {
   .navLinks {
     width: 65%;
+  }
+  .icon {
+    margin-right: 10%;
+  }
+}
+@media screen and (max-width: 1102px) {
+  .navLinks {
+    width: 65%;
+    margin-left: 0%;
+  }
+  .icon {
+    margin-right: 10%;
   }
 }
 @media screen and (max-width: 768px) {
