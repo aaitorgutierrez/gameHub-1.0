@@ -1,4 +1,3 @@
-import { Loading } from "../Components/Loading/Loading";
 import { createAndPrintFigure } from "../components/CardPokemon/CardPokemon";
 import { getPokemon } from "../services/pokemon.service";
 import { typePokemon } from "./typePokemon";
@@ -20,8 +19,12 @@ const dataMap = (data) => {
     name: pokemon.name,
     image: pokemon.sprites.other.dream_world.front_default,
     type: pokemon.types,
+    height: pokemon.height / 10,
+    weight: pokemon.weight / 10,
+    id: pokemon.id,
   }));
   const type = typePokemon(filterData);
+  console.log(filterData);
 
   dataGlobal = {
     type: type,

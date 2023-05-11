@@ -2,8 +2,6 @@ export const addListenersTheme = () => {
   const lightTheme = document.getElementById("icon");
   lightTheme.addEventListener("click", () => {
     const toggleTheme = document.querySelector("main");
-    const divQuiz = document.getElementsByClassName("quizDiv");
-    divQuiz;
     toggleTheme.classList.toggle("light-theme");
     if (!toggleTheme.classList.contains("light-theme")) {
       icon.src =

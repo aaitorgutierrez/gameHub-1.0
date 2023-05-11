@@ -8,11 +8,11 @@ const template = () => {
       <li>
         <figure id="figurePokemon" class="figureDashboard">
           <img
-            src="https://res.cloudinary.com/djglk3cso/image/upload/v1683121888/Game%20Hub/5b91409c-ee55-41da-9404-a71dbdabcd5f_gc49d2.png"
+            src="https://res.cloudinary.com/djglk3cso/image/upload/v1683795572/Dise%C3%B1o_sin_t%C3%ADtulo_7_orqi5p.png"
             alt="navigate to page pokemon"
             id="imgPokemon"
           />
-          <h2>Pokemon</h2>
+          <h2>Pokedex</h2>
         </figure>
       </li>
 
@@ -41,7 +41,7 @@ const template = () => {
       <li>
         <figure id="figureMemory" class="figureDashboard">
           <img
-            src="https://res.cloudinary.com/djglk3cso/image/upload/v1683206031/Dise%C3%B1o_sin_t%C3%ADtulo_sxdp90.png"
+            src="https://res.cloudinary.com/djglk3cso/image/upload/v1683796094/Dise%C3%B1o_sin_t%C3%ADtulo_9_smmn76.png"
             alt="navigate to page memory"
             id="imgMemory"
           />

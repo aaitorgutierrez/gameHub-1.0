@@ -9,7 +9,7 @@ import { printTemplate as Memory } from "../pages/Memory/Memory";
 export const initControler = (route) => {
   switch (route) {
     case undefined:
-      localStorage.getItem("name") ? Home() : Home();
+      localStorage.getItem("name") ? Home() : Login();
       break;
     case "Home":
       Home();

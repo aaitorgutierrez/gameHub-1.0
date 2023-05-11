@@ -11,10 +11,24 @@ export const createAndPrintFigure = (data) => {
     const templateFigure = `
       <figure class=${classCustomType}>
         <img src=${pokemon.image} alt=${pokemon.name} class="imgPokemon"/>
-        <h2>${pokemon.name}</h2>
+        <h2>${pokemon.name} ${id(pokemon.id)}</h2>
+        <p>Altura: ${pokemon.height}m</p>
+        <p>Peso: ${pokemon.weight}kg</p>
       </figure>
     `;
     // una vez creado el figure se lo inyectamos a la galeria con un += para que vaya sumando a lo que ya tiene
     document.querySelector(".galleryPokemon").innerHTML += templateFigure;
   });
+};
+const id = (id) => {
+  if (id < 10) {
+    id = `#00${id}`;
+    return id;
+  } else if (id >= 10 && id < 100) {
+    id = `#0${id}`;
+    return id;
+  } else {
+    id = `#${id}`;
+    return id;
+  }
 };

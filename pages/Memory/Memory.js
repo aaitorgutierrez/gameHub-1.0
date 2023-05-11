@@ -4,7 +4,7 @@ import { cardMemory } from "../../components/cardMemory/cardMemory";
 
 const template = () => `
 <div class="gameMemory">
-<section></section>
+<section class="memorySection"></section>
 </div>
 `;
 
