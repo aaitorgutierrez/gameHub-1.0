@@ -103,9 +103,6 @@ h5 {
   }
 }
 @media screen and (max-width: 768px) {
-  body {
-    overflow: hidden;
-  }
   /* esto hay que mirarlo con #app en el proyecto main  */
   .navLinks {
     position: absolute;
